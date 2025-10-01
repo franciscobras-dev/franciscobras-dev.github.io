@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charsets "utf-8">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desenvolvimento de Interfaces Web</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#disciplina">Interfaces Web</a></li>
+    </ul>
+  </nav>
 
-    <title>Primeira Pagina</title>
+  <section id="inicio" class="hero">
+    <div class="hero-text">Bem-vindo à Unidade Curricular de Desenvolvimento de Interfaces Web</div>
+    <a href="#projetos" class="cta">Ver Projetos</a>
+  </section>
 
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+  <section id="projetos" class="projetos">
+    <h2>Projetos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Lab1</h3>
+        <p>Introdução ao HTML e CSS básico.</p>
+        <a href="lab1/index.html">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Lab2</h3>
+        <p>Estruturação avançada e estilização com CSS.</p>
+        <a href="lab2/index.html">Ver Projeto</a>
+      </div>
+      <div class="card">
+        <h3>Lab3</h3>
+        <p>Layout responsivo e design moderno com Flexbox e Grid.</p>
+        <a href="lab3/index.html">Ver Projeto</a>
+      </div>
+    </div>
+  </section>
 
-  <body>
-    <header>
-      <h1>Primeira Pagina Web!</h1>
-    </header>
-    <main>
-      <p>Eis a minha primeira pagina Web!</p>
-      <p>
-        Na Unidade Curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view. php?id=11232" target="_blank"
-          >Desenvolvimento de Interfaces Web</a
-        >
-        abordaremos as seguintes tecnologias Web &#127760;:
-      </p>
+  <section id="disciplina" class="disciplina">
+    <div class="disciplina-texto">
+      <h2>Disciplina</h2>
+      <p>Na Unidade Curricular de <a href="https://moodle.ensinolusofona.pt/course/view.php?id=11232" target="_blank">Desenvolvimento de Interfaces Web</a> abordaremos as seguintes tecnologias Web 🌐:</p>
       <ul>
         <li>HTML</li>
-        <li>Css</li>
+        <li>CSS</li>
         <li>JavaScript</li>
         <li>React e Next.js</li>
       </ul>
-      <p>Iremos criar solugdes criativas!</p>
-      <nav>
-        <ul>
-            <li><a href="lab1/index.html">Lab1</a></li>
-            <li><a href="lab2/index.html">Lab2</a></li>
-      </ul>
-    </nav>
-      <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web"/>
-    </main>
-    <footer>
-      <p>Universidade Luséfona © 2025</p>
-    </footer>
-  </body>
+      <p>Iremos criar soluções criativas!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Universidade Lusófona © 2025</p>
+  </footer>
+</body>
 </html>
