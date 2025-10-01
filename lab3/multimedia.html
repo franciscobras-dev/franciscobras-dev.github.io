@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Québec City</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="local.html">Localização</a>
-      <a href="multimedia.html">Multimédia</a>
-      <a href="info.html">Informação</a>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <title>Québec City</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="local.html">Localização</a>
+    <a href="multimedia.html">Multimédia</a>
+    <a href="info.html">Informação</a>
+  </nav>
 
-    <header>
-      <h1>Québec City</h1>
-    </header>
-    <main>
-      <h2>Multimedia</h2>
-      <p>
-        <a href="#fotografias">Fotografias</a> |
-        <a href="#video">Video</a> |
-        <a href="#poesia">Poesia</a>
-      </p>
-      <p>Nesta pagina encontra conteudos multimédia.</p>
-      <section>
-        <h3 id="fotografias">Fotografias</h3>
-        <div class="fotografias">
-          <img src="/images/quebec_1.jpg" alt="vista 1" />
-          <img src="/images/quebec_2.jpg" alt="vista 2" />
-          <img src="/images/quebec_3.jpg" alt="vista 3" />
-          <img src="/images/quebec_4.jpg" alt="vista 4" />
-          <img src="/images/quebec_5.jpg" alt="vista 5" />
-          <img src="/images/quebec_6.jpg" alt="vista 6" />
-          <img src="/images/quebec_7.jpg" alt="vista 7" />
-          <img src="/images/quebec_8.jpg" alt="vista 8" />
-        </div>
-      </section>
-      <section>
-        <h3 id="video">Video</h3>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Wz2mea1t2II?si=hBi3yCFy8qg5M5qQ"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
-      <section>
-        <h3 id="poesia">Poesia</h3>
-        <div>
-          <p>Onde o inverno é mágico,</p>
-          <p>a história vive em cada esquina</p>
-          <p>e a alma europeia resiste,</p>
-          <p>elegante e resiliente,</p>
-          <p>o coração das Américas.</p>
-          <p>Uma cidade para se perder</p>
-          <p>e se encontrar.</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <p>DIW 2025</p>
-    </footer>
-  </body>
+  <header>
+    <h1>Québec City</h1>
+  </header>
+
+  <main>
+    <section id="fotografias" class="section">
+      <h2>Fotografias</h2>
+      <div class="fotografias">
+        <img src="/images/quebec_1.jpg" alt="vista 1" />
+        <img src="/images/quebec_2.jpg" alt="vista 2" />
+        <img src="/images/quebec_3.jpg" alt="vista 3" />
+        <img src="/images/quebec_4.jpg" alt="vista 4" />
+        <img src="/images/quebec_5.jpg" alt="vista 5" />
+        <img src="/images/quebec_6.jpg" alt="vista 6" />
+        <img src="/images/quebec_7.jpg" alt="vista 7" />
+        <img src="/images/quebec_8.jpg" alt="vista 8" />
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <h2>Video</h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Wz2mea1t2II"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="poesia" class="section">
+      <h2>Poesia</h2>
+      <div class="poesia-texto">
+        <p>Onde o inverno é mágico,</p>
+        <p>a história vive em cada esquina</p>
+        <p>e a alma europeia resiste,</p>
+        <p>elegante e resiliente,</p>
+        <p>o coração das Américas.</p>
+        <p>Uma cidade para se perder</p>
+        <p>e se encontrar.</p>
+      </div>
+    </section>
+
+    <section class="emblematic">
+      <img src="/images/quebec_emblematic.jpg" alt="Imagem emblemática de Québec" />
+      <div class="phrase">Onde o inverno é mágico.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>DIW 2025</p>
+  </footer>
+</body>
 </html>
