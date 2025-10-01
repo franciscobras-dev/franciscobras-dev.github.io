@@ -1,8 +1,22 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <title>Québec City</title>
+
+    <style>
+      .fotografias {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .fotografias img {
+        width: 150px;
+        border-radius: 20px;
+      }
+    </style>
   </head>
   <body>
     <nav>
@@ -18,6 +32,46 @@
     <main>
       <h2>Home</h2>
       <p>A minha cidade é muito linda!!!</p>
+      <h2>Multimedia</h2>
+      <p>Nesta pagina encontra conteudos multimédia.</p>
+      <section>
+        <h3>Fotografias</h3>
+        <div class="fotografias">
+          <img src="/images/quebec_1.jpg" alt="vista cidade" />
+          <img src="/images/quebec_2.jpg" alt="eletrico" />
+          <img src="/images/quebec_3.jpg" alt="rua Augusta" />
+          <img src="/images/quebec_4.jpg" alt="Castelo" />
+          <img src="/images/quebec_5.jpg" alt="Tejo" />
+          <img src="/images/quebec_6.jpg" alt="Praca Comércio" />
+          <img src="/images/quebec_7.jpg" alt="Baixa" />
+          <img src="/images/quebec_8.jpg" alt="Santos Populares" />
+        </div>
+      </section>
+      <section>
+        <h3>Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Wz2mea1t2II?si=hBi3yCFy8qg5M5qQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section>
+        <h3>Poesia</h3>
+        <div>
+          <p>Onde o inverno é mágico,</p>
+          <p>a história vive em cada esquina</p>
+            e a alma europeia resiste, <br />
+            elegante e resiliente, <br />
+            no coração das Américas. <br />
+            Uma cidade para se perder <br />
+            e se encontrar.
+        </div>
+      </section>
     </main>
     <footer>
       <p>DIW 2025</p>
