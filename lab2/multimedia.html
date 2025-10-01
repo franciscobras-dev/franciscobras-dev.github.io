@@ -3,26 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Québec City</title>
-
-    <style>
-      .fotografias {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-      }
-
-      .fotografias img {
-        width: 150px;
-        border-radius: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav>
       <a href="index.html">Home</a>
       <a href="local.html">Localização</a>
-      <a href="multimedia.html">Multimédiat</a>
+      <a href="multimedia.html">Multimédia</a>
       <a href="info.html">Informação</a>
     </nav>
 
@@ -30,25 +17,28 @@
       <h1>Québec City</h1>
     </header>
     <main>
-      <h2>Home</h2>
-      <p>A minha cidade é muito linda!!!</p>
       <h2>Multimedia</h2>
+      <p>
+        <a href="#fotografias">Fotografias</a> |
+        <a href="#video">Video</a> |
+        <a href="#poesia">Poesia</a>
+      </p>
       <p>Nesta pagina encontra conteudos multimédia.</p>
       <section>
-        <h3>Fotografias</h3>
+        <h3 id="fotografias">Fotografias</h3>
         <div class="fotografias">
-          <img src="/images/quebec_1.jpg" alt="vista cidade" />
-          <img src="/images/quebec_2.jpg" alt="eletrico" />
-          <img src="/images/quebec_3.jpg" alt="rua Augusta" />
-          <img src="/images/quebec_4.jpg" alt="Castelo" />
-          <img src="/images/quebec_5.jpg" alt="Tejo" />
-          <img src="/images/quebec_6.jpg" alt="Praca Comércio" />
-          <img src="/images/quebec_7.jpg" alt="Baixa" />
-          <img src="/images/quebec_8.jpg" alt="Santos Populares" />
+          <img src="/images/quebec_1.jpg" alt="vista 1" />
+          <img src="/images/quebec_2.jpg" alt="vista 2" />
+          <img src="/images/quebec_3.jpg" alt="vista 3" />
+          <img src="/images/quebec_4.jpg" alt="vista 4" />
+          <img src="/images/quebec_5.jpg" alt="vista 5" />
+          <img src="/images/quebec_6.jpg" alt="vista 6" />
+          <img src="/images/quebec_7.jpg" alt="vista 7" />
+          <img src="/images/quebec_8.jpg" alt="vista 8" />
         </div>
       </section>
       <section>
-        <h3>Video</h3>
+        <h3 id="video">Video</h3>
         <iframe
           width="560"
           height="315"
@@ -61,15 +51,15 @@
         ></iframe>
       </section>
       <section>
-        <h3>Poesia</h3>
+        <h3 id="poesia">Poesia</h3>
         <div>
           <p>Onde o inverno é mágico,</p>
           <p>a história vive em cada esquina</p>
-            e a alma europeia resiste, <br />
-            elegante e resiliente, <br />
-            no coração das Américas. <br />
-            Uma cidade para se perder <br />
-            e se encontrar.
+          <p>e a alma europeia resiste,</p>
+          <p>elegante e resiliente,</p>
+          <p>o coração das Américas.</p>
+          <p>Uma cidade para se perder</p>
+          <p>e se encontrar.</p>
         </div>
       </section>
     </main>
