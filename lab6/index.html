@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loja Online - Lab6</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Loja Online</h1>
+    <nav>
+      <ul>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#cesto">Cesto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <!-- Produtos serão inseridos aqui via JavaScript -->
+    </section>
+
+    <section id="cesto">
+      <h2>Cesto</h2>
+      <p>O seu cesto está vazio.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>DIW 2025</p>
+  </footer>
+
+  <script src="produtos.js"></script>
+  <script>
+    const produtosSection = document.getElementById('produtos');
+
+    produtos.forEach(produto => {
+      const article = document.createElement('article');
+      article.innerHTML = `
+        <img src="${produto.image}" alt="${produto.title}" />
+        <h3>${produto.title}</h3>
+        <p class="categoria">${produto.category}</p>
+        <p class="preco">€${produto.price.toFixed(2)}</p>
+        <p class="descricao">${produto.description}</p>
+      `;
+      produtosSection.appendChild(article);
+    });
+  </script>
+</body>
+</html>
